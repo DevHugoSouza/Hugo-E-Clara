@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Minha história favorita é a que eu vivo com você.">
+  <title>O casal mais lindo do Brasil</title>
+  <link rel="icon" href="assets/coracao.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="momentos.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="titulo">
+      <img class="hero-photo" src="assets/foto-1.jpg" alt="Hugo e Clara sorrindo juntos no carro" fetchpriority="high">
+      <header class="header">
+        <a class="brand" href="#" aria-label="Hugo e Clara, início">HUGO &amp; CLARA</a>
+        <img class="heart" src="assets/coracao.svg" alt="" width="32" height="32">
+      </header>
+      <div class="hero-copy">
+        <!-- EDITE AQUI: os textos da capa. -->
+        <p class="eyebrow">NOSSA SÉRIE FAVORITA</p>
+        <h1 id="titulo">O casal mais<br class="mobile-break"> lindo do Brasil</h1>
+        <p class="metadata"><span class="match">100% de sintonia</span><span class="divider">|</span><span>Romance · Vida real · Sem final</span></p>
+        <p class="synopsis">A melhor série é a série de pirocada que eu quero te dar.</p>
+        <a class="play-button" href="#momentos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v18l15-9z"/></svg>Reviver nossos momentos</a>
+      </div>
+    </section>
+
+    <section id="momentos" class="moments" aria-labelledby="momentos-titulo">
+      <div class="section-heading"><h2 id="momentos-titulo">Nossos momentos</h2><span id="episode-total">7 episódios</span></div>
+      <div class="carousel">
+        <div class="carousel-track" id="carousel-track" tabindex="0" aria-label="Fotos dos nossos momentos. Use as setas ou deslize para navegar."></div>
+        <button class="carousel-arrow previous" id="previous" type="button" aria-label="Momento anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4-8 8 8 8"/></svg></button>
+        <button class="carousel-arrow next" id="next" type="button" aria-label="Próximo momento"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8"/></svg></button>
+      </div>
+      <div class="episode-description" aria-live="polite" aria-atomic="true">
+        <p class="episode-label" id="episode-label">EPISÓDIO 01</p>
+        <div class="episode-title-row"><h3 id="episode-title"></h3><span class="counter"><span id="current-number">01</span> / <span id="total-number">07</span></span></div>
+        <p class="description" id="episode-description"></p>
+      </div>
+      <div class="dots" id="dots" aria-label="Escolher um momento"></div>
+    </section>
+
+    <section class="memories" aria-labelledby="memorias-titulo">
+      <!-- EDITE AQUI: os textos da colagem. -->
+      <div class="collage-heading"><h2 id="memorias-titulo">Fotinhas nossas</h2><p>Dois maluquinhos em varias fotos HAHAHAHA.</p></div>
+      <img class="collage" src="assets/colagem.jpg" alt="Colagem de doze lembranças de Hugo e Clara: selfies, beijos, passeios e momentos com os cachorrinhos" width="1460" height="1470" loading="lazy">
+    </section>
+    <footer>
+      <img class="heart" src="assets/coracao.svg" alt="" width="38" height="38">
+      <!-- EDITE AQUI: a mensagem final. -->
+      <p>E que venham os próximos episódios.</p>
+      <span>Feito com amor, para minha rabudinha gostosa.</span>
+    </footer>
+  </main>
+</body>
+</html>
